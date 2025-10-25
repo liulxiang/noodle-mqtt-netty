@@ -1,0 +1,44 @@
+spring:
+  main:
+    web-application-type: none
+
+# MQTT服务配置
+mqtt:
+  # 服务端口
+  port: 8888
+  # 主线程数
+  boss-thread: 1
+  # 工作线程数
+  worker-thread: 1
+  # 认证配置
+  auth:
+    # 登录权限开关
+    login-enabled: false
+    # 用户名
+    username: admin
+    # 密码
+    password: 123456
+    # 客户端ID验证开关
+    client-id-validation: false
+    # 允许的客户端ID列表
+    allowed-client-ids:
+      - c1
+      - c2
+      - c3
+  # QoS配置
+  qos:
+    # 默认QoS级别
+    default-level: 1
+  # 消息格式验证
+  message:
+    # JSON格式验证开关
+    json-validation: false
+
+# WebSocket服务配置
+websocket:
+  # 服务端口
+  port: 9010
+  # 主线程数
+  boss-thread: 1
+  # 工作线程数
+  worker-thread: 4
