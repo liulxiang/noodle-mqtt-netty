@@ -65,7 +65,7 @@ src/main/resources/
 ├── application.yml         # 应用配置文件
 └── logback-spring.xml      # 日志配置文件
 
-src/test/java/com/my/
+src/test/java/com/noodle/mqtt/
 └── ConnectionTest.java     # MQTT连接测试类
 ```
 
@@ -176,7 +176,7 @@ java -jar target/mqtt-netty-server-0.0.1-SNAPSHOT.jar
 
 ```bash
 # 确保MQTT服务已在端口8888启动
-mvn exec:java -Dexec.mainClass="com.my.ConnectionTest"
+mvn exec:java -Dexec.mainClass="com.noodle.mqtt.ConnectionTest"
 ```
 
 ## 📝 使用场景
